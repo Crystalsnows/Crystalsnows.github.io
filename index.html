@@ -10,21 +10,46 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <style>
+            html,
+            body {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
 
+            .container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: url(images/bg.jpg) no-repeat;
+                background-size: cover;
+            }
+
+            .slogan {
+                position: absolute;
+                top: 40%;
+                transform: translateY(-50%);
+                width: 100%;
+                font-size: 48px;
+                color: #fff;
+                text-align: center;
+
+            }
+        </style>
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
+        <div class="container">
+            <p class="slogan">ST:一个跨越星系的视讯系统</p>     
+        </div>
    
-        <p>ST:一个跨越星系的视讯系统</p>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+       
     </body>
 </html>
